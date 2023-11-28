@@ -1,0 +1,13 @@
+# Build histogram
+plt.hist(df['price_usd'])
+
+
+# Label axes
+plt.xlabel('Price [USD]')
+plt.ylabel('Frequency')
+
+# Add title
+plt.title("Distribution of Home Prices");
+
+# Don't change the code below 👇
+plt.savefig("images/1-5-12.png", dpi=150)
