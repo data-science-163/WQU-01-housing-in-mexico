@@ -1,0 +1,2 @@
+summary_stats = df[['area_m2','price_usd']].describe()
+summary_stats
