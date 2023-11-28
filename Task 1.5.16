@@ -1,0 +1,2 @@
+df_south = df[df['region'] == 'South']
+df_south.head()
