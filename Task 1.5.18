@@ -1,0 +1,18 @@
+# Subset data
+df_south_rgs = homes_by_state.idxmax()
+print(df_south_rgs)
+#df_south[df_south['state'] == df_south_rgs]['area_m2']
+
+# Build scatter plot
+plt.scatter(x=df_south[df_south['state'] == df_south_rgs]['area_m2'], y=df_south[df_south['state'] == df_south_rgs]['price_usd'])
+
+
+# Label axes
+plt.xlabel("Area [sq meters]")
+plt.ylabel("Price [USD]")
+
+# Add title
+plt.title("Rio Grande do Sul: Price vs. Area")
+
+# Don't change the code below 👇
+plt.savefig("images/1-5-18.png", dpi=150)
