@@ -1,0 +1,4 @@
+south_states_corr = {}
+for state in homes_by_state.index:
+    south_states_corr[state] = df_south[df_south['state'] == state]['area_m2'].corr(df_south[df_south['state'] == state]['price_usd'])
+south_states_corr
