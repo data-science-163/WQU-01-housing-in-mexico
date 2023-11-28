@@ -1,0 +1,1 @@
+df1['price_usd'] = df1['price_usd'].str.replace('$','', regex=True).str.replace(',','').astype(float)
