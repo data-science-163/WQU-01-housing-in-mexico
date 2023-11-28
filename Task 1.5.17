@@ -1,0 +1,2 @@
+homes_by_state = df_south['state'].value_counts()
+homes_by_state
