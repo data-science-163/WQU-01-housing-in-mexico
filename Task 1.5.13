@@ -1,0 +1,12 @@
+# Build box plot
+plt.boxplot(df['area_m2'], vert=False)
+
+
+# Label x-axis
+plt.xlabel("Area [sq meters]")
+
+# Add title
+plt.title("Distribution of Home Sizes");
+
+# Don't change the code below 👇
+plt.savefig("images/1-5-13.png", dpi=150)
