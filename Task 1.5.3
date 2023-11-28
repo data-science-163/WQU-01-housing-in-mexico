@@ -1,0 +1,3 @@
+df1["lat-lon"].str.split(",", expand=True)
+df1[["lat", "lon"]] = df1[["lat", "lon"]].astype('float')
+df1.info()
